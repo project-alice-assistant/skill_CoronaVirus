@@ -80,5 +80,3 @@ class CoronaVirus(AliceSkill):
 				found['recovered']
 			])
 		)
-		return
-
