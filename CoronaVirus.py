@@ -19,7 +19,7 @@ class CoronaVirus(AliceSkill):
 
 
 	@IntentHandler('GetCoronaVirusSpreadInfo')
-	def getInfo(self, session: DialogSession, **_kwargs):
+	def getCoronaVirusSpreadInfo(self, session: DialogSession, **_kwargs):
 		if 'Country' not in session.slots:
 			country = self.getConfig('country').title()
 		else:
