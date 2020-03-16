@@ -1,0 +1,43 @@
+{
+	"skill": "CoronaVirus",
+	"icon": "time",
+	"description": "Erhalte Informationen zum Coronavirus",
+	"slotTypes": [],
+	"intents": [
+		{
+			"name": "GetCoronaVirusSpreadInfo",
+			"description": "Der Benutzer fragt nach Informationen zum Coronavirus",
+			"enabledByDefault": true,
+			"utterances": [
+				"Wie ist die Situation zum Virus in der {Schweiz:=>Country}",
+				"Wie ist die Situation zu Corona",
+				"Wie verbreitet sich Corona in {Deutschland:=>Country}",
+				"Wie ist die Situation zu Corona",
+				"Gib mir die neusten Zahlen zum Coronavirus",
+				"Wie ist die Verbreitung des Corona Virus",
+				"Bitte sag mir wie die Coronavirus verbreitung gerade ist",
+				"Gib mir Informationen zu Corona",
+				"Gib mir bitte Informationen zum Coronavirus",
+				"Sag mir bitte die neusten Informationen zu Corona",
+				"sag mir die neusten Zahlen zu Corona in {Italien:=>Country}",
+				"Gib mir bitte die neusten Zahlen zu Corona in {Frankreich:=>Country}",
+				"Wie ist die Verbreitung von Corona in den {Vereineigten Staaten:=>Country}",
+				"Bitte geb mir die neuen Zahlen zum Coronavirus in {Schweden:=>Country}",
+				"Ich brauche die neusten Zahlen zu Corona in {Finland:=>Country}",
+				"Ich brauche bitte die neusten Informationen aus {Griechenland:=>Country} zum Coronavirus",
+				"Gib mir doch bitte ein paar Neuigkeiten zu Corona in {Polen:=>Country}",
+				"Bitte die neusten Zahlen aus {denmark:=>Country} zu Corona",
+				"Kannst du mir bitte die neusten Zahlen zu Corona aus {Japan:=>Country} nennen"
+			],
+			"slots": [
+				{
+					"name": "Country",
+					"description": null,
+					"required": false,
+					"type": "Alice/Country",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}

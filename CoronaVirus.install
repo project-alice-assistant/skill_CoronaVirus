@@ -1,6 +1,6 @@
 {
 	"name": "CoronaVirus",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"icon": "fas fa-biohazard",
 	"category": "health",
 	"author": "psycho",
@@ -11,7 +11,8 @@
 	"pipRequirements": [],
 	"conditions": {
 		"lang": [
-			"en"
+			"en",
+			"de"
 		]
 	}
 }
