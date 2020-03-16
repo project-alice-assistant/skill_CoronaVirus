@@ -11,6 +11,6 @@ Information about the spread of the virus, worldwide
 - Alice minimu: Version: 1.0.0-a6
 - Conditions:
   - en
-	- de
+  - de
 - Requirements:
 
