@@ -23,7 +23,10 @@ class CoronaVirus(AliceSkill):
 		if 'Country' not in session.slots:
 			country = self.getConfig('country').title()
 		else:
-			country = session.slotValue('country')
+			country = session.slotValue('Country')
+
+		if country == "United States":
+			country = "US"
 
 		req = requests.get(
 			url='https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats',
@@ -45,7 +48,7 @@ class CoronaVirus(AliceSkill):
 
 		answer = req.json()
 
-		if not answer or 'data' not in answer or 'covid9Stats' not in answer['data']:
+		if not answer or 'data' not in answer or 'covid19Stats' not in answer['data']:
 			self.logError('No data in API answer')
 			self.endDialog(
 				sessionId=session.sessionId,
@@ -53,10 +56,10 @@ class CoronaVirus(AliceSkill):
 			)
 			return
 
-		if len(answer['data']['covid9Stats']) > 1:
+		if len(answer['data']['covid19Stats']) > 1:
 			found = dict()
-			for worldCountry in answer['data']['covid9Stats']:
-				if worldCountry['country'].lower() == country.lower():
+			for worldCountry in answer['data']['covid19Stats']:
+				if worldCountry['country'] == country:
 					found = worldCountry
 					break
 
@@ -67,7 +70,7 @@ class CoronaVirus(AliceSkill):
 				)
 				return
 		else:
-			found = answer['data']['covid9Stats'][0]
+			found = answer['data']['covid19Stats'][0]
 
 		self.endDialog(
 			sessionId=session.sessionId,
