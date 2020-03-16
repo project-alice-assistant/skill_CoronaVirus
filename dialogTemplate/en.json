@@ -1,0 +1,44 @@
+{
+	"skill": "CoronaVirus",
+	"icon": "time",
+	"description": "Getting info about Corona virus",
+	"slotTypes": [],
+	"intents": [
+		{
+			"name": "GetCoronaVirusSpreadInfo",
+			"description": "User is asking for info about corona virus",
+			"enabledByDefault": true,
+			"utterances": [
+				"what's the situation about the virus in {switzerland:=>Country}",
+				"what's the situation about the virus",
+				"how's corona virus spreading in {germany:=>Country}",
+				"how's corona virus now",
+				"tell me about the spread of the corona virus",
+				"tell me about the spread of the corona virus please",
+				"please tell me about the spread of the corona virus please",
+				"give me information about the corona virus",
+				"give me information about the corona virus please",
+				"please give me information about the corona virus",
+				"give me information about the corona virus in {italy:=>Country}",
+				"give me information about the corona virus in {france:=>Country} please",
+				"please give me information about the corona virus in the {united states:=>Country}",
+				"give me information about the corona virus in {sweden:=>Country} please",
+				"i need info about the corona virus in {finland:=>Country}",
+				"i need info about the corona virus in {greece:=>Country} please",
+				"please give me some info about the corona virus in {poland:=>Country}",
+				"i need info about the corona virus in {denmark:=>Country}",
+				"i need info about the corona virus in {japan:=>Country} please"
+			],
+			"slots": [
+				{
+					"name": "Country",
+					"description": null,
+					"required": false,
+					"type": "Alice/Country",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}
+

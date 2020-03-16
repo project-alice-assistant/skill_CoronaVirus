@@ -1,0 +1,14 @@
+{
+	"country": {
+		"defaultValue": "switzerland",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "The default country to get information from"
+	},
+	"apiKey": {
+		"defaultValue": "",
+		"dataType": "string",
+		"isSensitive": true,
+		"description": "Get yours on https://docs.rapidapi.com/docs/keys"
+	}
+}
