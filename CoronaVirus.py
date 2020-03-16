@@ -12,10 +12,6 @@ class CoronaVirus(AliceSkill):
 	Description: Information about the spread of the virus, worldwide
 	"""
 
-	def __init__(self):
-		super().__init__()
-
-
 	def onStart(self):
 		super().onStart()
 		if not self.getConfig('apiKey'):
@@ -40,6 +36,7 @@ class CoronaVirus(AliceSkill):
 		)
 
 		if req.status_code != 200:
+			self.logError('API access failed')
 			self.endDialog(
 				sessionId=session.sessionId,
 				text=self.randomTalk(text='error')
@@ -49,6 +46,7 @@ class CoronaVirus(AliceSkill):
 		answer = req.json()
 
 		if not answer or 'data' not in answer or 'covid9Stats' not in answer['data']:
+			self.logError('No data in API answer')
 			self.endDialog(
 				sessionId=session.sessionId,
 				text=self.randomTalk(text='error')
