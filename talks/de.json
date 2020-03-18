@@ -1,12 +1,12 @@
 {
 	"situation": [
 		"Aktuell gibt es in {}, {} bestätigte Fälle, mit {} Toten und {} Genesenen.",
-		"Nach neusten Informationen aus {}, {} bestätigte Fälle, mit {} Toten und {} Genesenen"
+		"Nach neusten Informationen aus {}, {} bestätigte Fälle, mit {} Toten und {} Genesenen."
 	],
 	"error": [
 		"Entschuldigung, etwas ist schief gelaufen, das kann ich nicht sagen."
 	],
 	"noData": [
-		"Entschuldigung, ich habe keine Daten zu {}"
+		"Entschuldigung, ich habe keine Daten zu {}."
 	]
 }

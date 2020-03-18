@@ -1,11 +1,11 @@
 {
 	"name": "CoronaVirus",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"icon": "fas fa-biohazard",
 	"category": "health",
 	"author": "psycho",
 	"maintainers": [],
-	"desc": "Information about the spread of the virus, worldwide. Get your api key: https://rapidapi.com/KishCom/api/covid-19-coronavirus-statistics",
+	"desc": "Information about the spread of the virus, worldwide.",
 	"aliceMinVersion": "1.0.0-a6",
 	"systemRequirements": [],
 	"pipRequirements": [],
@@ -13,7 +13,8 @@
 		"lang": [
 			"en",
 			"de"
-		]
+		],
+		"online": true
 	}
 }
 

@@ -1,12 +1,12 @@
 {
 	"situation": [
-		"Currently, in {}, {} confirmed cases, with {} deads and {} recoveries",
-		"According to latest information from {}, {} confirmed cases, with {} deads and {} recoveries"
+		"Currently, in {}, {} confirmed cases, with {} deads and {} recoveries. That's {} new cases and {} new deaths today. {} cases are reported as serious.",
+		"According to latest information from {}, {} confirmed cases, with {} deads and {} recoveries. That's {} new cases and {} new deaths today. {} cases are reported as serious."
 	],
 	"error": [
-		"I'm sorry, something went wrong, I can't say"
+		"I'm sorry, something went wrong, I can't say."
 	],
 	"noData": [
-		"I'm sorry, I can't find data for {}"
+		"I'm sorry, I can't find data for {}."
 	]
 }
