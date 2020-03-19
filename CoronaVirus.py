@@ -34,7 +34,10 @@ class CoronaVirus(AliceSkill):
 			)
 			return
 
-		answer = req.json()
+		try:
+			answer = req.json()
+		except:
+			answer = None
 
 		if not answer or 'countrydata' not in answer:
 			self.logError('No data in API answer')
