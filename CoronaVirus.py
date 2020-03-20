@@ -24,6 +24,7 @@ class CoronaVirus(AliceSkill):
 
 		params = {'global': 'stats'} if country == 'EARTH' else {'countryTotal': country}
 
+		req: Optional[Response] = None
 		try:
 			req = requests.get(
 				url='https://thevirustracker.com/free-api',
@@ -31,7 +32,6 @@ class CoronaVirus(AliceSkill):
 			)
 		except Exception as e:
 			self.logError(f'Request failed: {e}')
-			req: Optional[Response] = None
 
 		if not req or req.status_code != 200:
 			self.logError('API access failed')
@@ -43,7 +43,6 @@ class CoronaVirus(AliceSkill):
 
 		try:
 			answer = req.json()
-			print(answer)
 		except:
 			answer = None
 
