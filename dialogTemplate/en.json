@@ -16,6 +16,8 @@
 				"how's coronavirus spreading in {germany:=>Country}",
 				"how's coronavirus now",
 				"how's coronavirus",
+				"how's the coronavirus",
+				"how's the coronavirus in {italy:=>Country}",
 				"please tell me about the coronavirus",
 				"what's the coronavirus situation on the {world:=>Country}",
 				"tell me about the spread of coronavirus",
@@ -32,7 +34,12 @@
 				"i need info about the coronavirus in {greece:=>Country} please",
 				"please give me some info about the coronavirus in {poland:=>Country}",
 				"i need info about coronavirus in {denmark:=>Country}",
-				"i need info about the coronavirus in {japan:=>Country} please"
+				"i need info about the coronavirus in {japan:=>Country} please",
+				"what's the virus situation",
+				"tell me the coronavirus sitation please",
+				"please tell me the coronavirus sitation",
+				"what's the current virus situation",
+				"what's the virus situation in the {world:=>Country}"
 			],
 			"slots": [
 				{

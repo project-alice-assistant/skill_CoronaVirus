@@ -5,7 +5,7 @@
 ### Description
 Information about the spread of the virus, worldwide
 
-- Version: 1.0.9
+- Version: 1.0.10
 - Author: Psycho
 - Maintainers:
 - Alice minimu: Version: 1.0.0-a6
