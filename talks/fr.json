@@ -1,0 +1,12 @@
+{
+	"situation": [
+		"A l'heure actuelle, en {}, {} cas confirmés avec {} morts et {} guérisons. C'est {} nouveaux cas et {} nouveaux morts. {} sont rapportés comme sérieux.",
+		"D'après les dernière informations, en {}, {} cas confirmés avec {} morts et {} guérisons. C'est {} nouveaux cas et {} nouveaux morts. {} sont rapportés comme sérieux."
+	],
+	"error": [
+		"Désolés, quelque chose n'a pas fonctionné, je ne sais pas."
+	],
+	"noData": [
+		"Désolée, je ne trouve pas de données pour {}."
+	]
+}

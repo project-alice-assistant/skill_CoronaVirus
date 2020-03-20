@@ -12,7 +12,8 @@
 	"conditions": {
 		"lang": [
 			"en",
-			"de"
+			"de",
+			"fr"
 		],
 		"online": true
 	}

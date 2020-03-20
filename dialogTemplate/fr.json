@@ -1,0 +1,48 @@
+{
+	"skill": "CoronaVirus",
+	"icon": "time",
+	"description": "Demande d'information sur le coronavirus",
+	"slotTypes": [],
+	"intents": [
+		{
+			"name": "GetCoronaVirusSpreadInfo",
+			"description": "L'utilisateur demande des informations sur le coronavirus",
+			"enabledByDefault": true,
+			"utterances": [
+				"quelle est la situation actuelle du coronavirus en {suisse:=>Country}",
+				"quelle est la situation actuelle du coronavirus",
+				"quelle est la situation du coronavirus en {suisse:=>Country}",
+				"quelle est la situation du coronavirus",
+				"comment se répend le coronavirus en {allemagne:=>Country}",
+				"comment est coronavirus en {italie:=>Country}",
+				"s'il te plait parle moi du coronavirus",
+				"qelle est la situtation du coronavirus dans le {monde:=>Country}",
+				"donne moi des informations sur le coronavirus",
+				"donne moi des informations sur le coronavirus s'il te plait",
+				"s'il te plait donne moi des informations sur le coronavirus",
+				"s'il te plait donne moi des informations sur le coronavirus en {france:=>Country}",
+				"donne moi des informations sur le coronavirus en {autriche:=>Country}",
+				"informations sur le coronavirus en {suède:=>Country}",
+				"j'ai besoin d'informations sur le coronavirus en {suisse:=>Country}",
+				"j'ai besoin d'info sur le coronavirus en {espagne:=>Country}",
+				"j'ai besoin d'info sur le coronavirus au {portugal:=>Country} s'il te plait",
+				"j'ai besoin d'information sur le coronavirus en {finlande:=>Country} s'il te plait",
+				"j'ai besoin d'information sur le coronavirus s'il te plait",
+				"quelle est la situation du virus",
+				"quelle est la situation du virus s'il te plait",
+				"s'il te plait donne moi la situation du virus",
+				"s'il te plait donne moi la situation du virus aux {états-unis:=>Country}"
+			],
+			"slots": [
+				{
+					"name": "Country",
+					"description": null,
+					"required": false,
+					"type": "Alice/Countries",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}
+

@@ -12,6 +12,7 @@ Information about the spread of the virus, worldwide
 - Conditions:
   - en
   - de
+  - fr
   - online
 - Requirements:
 
