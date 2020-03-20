@@ -26,9 +26,11 @@ class CoronaVirus(AliceSkill):
 
 		req: Optional[Response] = None
 		try:
+			headers = {'Accept-Encoding': 'identity'}
 			req = requests.get(
 				url='https://thevirustracker.com/free-api',
-				params=params
+				params=params,
+				headers=headers
 			)
 		except Exception as e:
 			self.logError(f'Request failed: {e}')
