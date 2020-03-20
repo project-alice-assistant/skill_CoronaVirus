@@ -1,4 +1,7 @@
+from typing import Optional
+
 import requests
+from requests import Response
 
 from core.base.model.AliceSkill import AliceSkill
 from core.dialog.model.DialogSession import DialogSession
@@ -28,7 +31,7 @@ class CoronaVirus(AliceSkill):
 			)
 		except Exception as e:
 			self.logError(f'Request failed: {e}')
-			req = None
+			req: Optional[Response] = None
 
 		if not req or req.status_code != 200:
 			self.logError('API access failed')
