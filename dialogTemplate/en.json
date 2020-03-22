@@ -39,7 +39,15 @@
 				"tell me the coronavirus sitation please",
 				"please tell me the coronavirus sitation",
 				"what's the current virus situation",
-				"what's the virus situation in the {world:=>Country}"
+				"what's the virus situation in the {world:=>Country}",
+				"can you tell me some information about the Coronavirus",
+				"can you tell me some information about the Coronavirus please",
+				"can you give me some information about the Coronavirus",
+				"can you give me some information about the Coronavirus please",
+				"can you give me some information about the Coronavirus in {switzerland:=>Country}",
+				"can you give me some information about the Coronavirus in {switzerland:=>Country} please",
+				"can you give me some information about Coronavirus in {switzerland:=>Country} please",
+				"can you tell me any information about Coronavirus in {switzerland:=>Country} please"
 			],
 			"slots": [
 				{
