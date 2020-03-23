@@ -26,7 +26,7 @@ class CoronaVirus(AliceSkill):
 
 		req: Optional[Response] = None
 		try:
-			headers = {'Accept-Encoding': 'identity'}
+			headers = {'Accept': '*/*', 'User-Agent': 'request'}
 			req = requests.get(
 				url='https://thevirustracker.com/free-api',
 				params=params,
