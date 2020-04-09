@@ -12,3 +12,4 @@ Information about the spread of the virus, worldwide
   - en
   - de
   - fr
+
