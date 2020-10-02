@@ -1,12 +1,9 @@
 {
 	"skill": "CoronaVirus",
-	"icon": "time",
-	"description": "Getting info about Corona virus",
 	"slotTypes": [],
 	"intents": [
 		{
 			"name": "GetCoronaVirusSpreadInfo",
-			"description": "User is asking for info about corona virus",
 			"enabledByDefault": true,
 			"utterances": [
 				"what's the current coronavirus situation in {switzerland:=>Country}",
