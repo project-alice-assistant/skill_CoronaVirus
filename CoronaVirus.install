@@ -1,12 +1,12 @@
 {
     "name": "CoronaVirus",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "icon": "fas fa-biohazard",
     "category": "health",
     "author": "psycho",
     "maintainers": [],
     "desc": "Information about the spread of the virus, worldwide.",
-    "aliceMinVersion": "1.0.0-a6",
+    "aliceMinVersion": "1.0.0-b3",
     "systemRequirements": [],
     "pipRequirements": [],
     "conditions": {
