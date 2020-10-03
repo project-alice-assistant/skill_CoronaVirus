@@ -28,7 +28,6 @@
 			"slots": [
 				{
 					"name": "Country",
-					"description": null,
 					"required": false,
 					"type": "Alice/Countries",
 					"missingQuestion": ""
