@@ -1,7 +1,7 @@
 {
 	"situation": [
-		"Currently, in {}, {} confirmed cases, with {} deads and {} recoveries. That's {} new cases and {} new deaths today. {} cases are reported as serious.",
-		"According to latest information from {}, {} confirmed cases, with {} deads and {} recoveries. That's {} new cases and {} new deaths today. {} cases are reported as serious."
+		"Currently, in {}, {} confirmed cases, with {} deads and {} recoveries. That's {} new cases and {} new deaths today.",
+		"According to latest information from {}, {} confirmed cases, with {} deads and {} recoveries. That's {} new cases and {} new deaths today."
 	],
 	"error": [
 		"I'm sorry, something went wrong, I can't say."

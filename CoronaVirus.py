@@ -18,18 +18,15 @@ class CoronaVirus(AliceSkill):
 	@IntentHandler('GetCoronaVirusSpreadInfo')
 	def getCoronaVirusSpreadInfo(self, session: DialogSession, **_kwargs):
 		if 'Country' not in session.slots:
-			country = self.getConfig('defaultCountryCode').upper()
+			country = self.getConfig('defaultCountryCode').lower()
 		else:
-			country = session.slotValue('Country')
-
-		params = {'global': 'stats'} if country == 'EARTH' else {'countryTotal': country}
+			country = session.slotValue('Country').lower()
 
 		req: Optional[Response] = None
 		try:
 			headers = {'Accept': '*/*', 'User-Agent': 'request'}
 			req = requests.get(
-				url='https://thevirustracker.com/free-api',
-				params=params,
+				url=f'https://api.covid19api.com/live/country/{country}',
 				headers=headers
 			)
 		except Exception as e:
@@ -48,7 +45,7 @@ class CoronaVirus(AliceSkill):
 		except:
 			answer = None
 
-		if not answer or 'countrydata' not in answer:
+		if not answer:
 			self.logError('No data in API answer')
 			self.endDialog(
 				sessionId=session.sessionId,
@@ -56,31 +53,14 @@ class CoronaVirus(AliceSkill):
 			)
 			return
 
-		if len(answer['countrydata']) > 1:
-			found = dict()
-			for worldCountry in answer['countrydata']:
-				if worldCountry['info']['code'] == country:
-					found = worldCountry
-					break
-
-			if not found:
-				self.endDialog(
-					sessionId=session.sessionId,
-					text=self.randomTalk(text='noData', replace=[session.slotRawValue('Country')])
-				)
-				return
-		else:
-			found = answer['countrydata'][0]
-
 		text = self.randomTalk(text='situation', replace=[
-				found['info']['title'],
-				found['total_cases'],
-				found['total_deaths'],
-				found['total_recovered'],
-				found['total_new_cases_today'],
-				found['total_new_deaths_today'],
-				found['total_serious_cases']
-			])
+			answer[-1]['Country'],
+			answer[-1]['Confirmed'],
+			answer[-1]['Deaths'],
+			answer[-1]['Recovered'],
+			answer[-1]['Confirmed'] - answer[-2]['Confirmed'],
+			answer[-1]['Deaths'] - answer[-2]['Deaths']
+		])
 
 		self.endDialog(
 			sessionId=session.sessionId,

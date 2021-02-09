@@ -1,6 +1,6 @@
 {
 	"defaultCountryCode": {
-		"defaultValue": "CH",
+		"defaultValue": "ch",
 		"dataType": "string",
 		"isSensitive": false,
 		"description": "The default country code to get information from"
