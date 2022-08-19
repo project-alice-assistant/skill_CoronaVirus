@@ -31,7 +31,7 @@ jobs:
         uses: jpetrucciani/mypy-check@master
         with:
           path: '.'
-          mypy_flags: mypy --install-types --non-interactive
+          requirements_file: 'mypy_requirements.txt'
       - name: Sonarcloud scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
